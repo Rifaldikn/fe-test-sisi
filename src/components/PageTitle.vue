@@ -12,7 +12,7 @@ defineProps({
 
 <template>
   <slot>
-    <div class="text-h5 font-weight-bold">
+    <div class="text-h4 font-weight-bold">
       {{ title || route.meta.title }}
     </div>
   </slot>
