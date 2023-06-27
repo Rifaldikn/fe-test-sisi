@@ -3,6 +3,7 @@ import { defineStore } from "pinia";
 
 export const useMasterDataStore = defineStore("masterData", {
   state: () => ({
+    atkRequestStatus: ["Draft", "Waiting Approval", "Approved", "Rejected"],
     warehouses: [
       {
         id: 1,
