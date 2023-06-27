@@ -136,7 +136,7 @@ initState();
 
           <v-divider></v-divider>
 
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <FieldTitle mandatory> Warehouse</FieldTitle>
             <v-autocomplete
               :items="masterStore.warehouses"
@@ -151,7 +151,7 @@ initState();
             ></v-autocomplete>
           </v-col>
 
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <FieldTitle mandatory> Item Name</FieldTitle>
             <v-autocomplete
               v-model="form.itemName"
@@ -166,7 +166,7 @@ initState();
             ></v-autocomplete>
           </v-col>
 
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <FieldTitle mandatory> UOM</FieldTitle>
             <v-autocomplete
               v-model="form.uom"
@@ -181,7 +181,7 @@ initState();
             ></v-autocomplete>
           </v-col>
 
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <FieldTitle mandatory>Quantity</FieldTitle>
             <v-text-field
               v-model="form.quantity"
@@ -194,7 +194,7 @@ initState();
             ></v-text-field>
           </v-col>
 
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <FieldTitle mandatory>Brand</FieldTitle>
             <v-autocomplete
               v-model="form.brand"
@@ -209,7 +209,7 @@ initState();
             ></v-autocomplete>
           </v-col>
 
-          <v-col cols="6">
+          <v-col cols="12" md="6">
             <FieldTitle>Remarks</FieldTitle>
             <v-text-field
               v-model="form.remarks"

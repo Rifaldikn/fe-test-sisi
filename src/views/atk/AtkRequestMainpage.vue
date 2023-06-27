@@ -37,7 +37,7 @@ const resetFilter = () => {
 
 <template>
   <v-row>
-    <v-col cols="6" class="d-flex align-center justify-space-between">
+    <v-col md="6" cols="12" class="d-flex align-center justify-space-between">
       <page-title> </page-title>
     </v-col>
 
@@ -81,7 +81,7 @@ const resetFilter = () => {
   </v-row>
 
   <v-row align="end">
-    <v-col cols="2">
+    <v-col cols="6" md="2">
       <div>
         <div>Company</div>
         <v-autocomplete
@@ -99,7 +99,7 @@ const resetFilter = () => {
       </div>
     </v-col>
 
-    <v-col cols="2">
+    <v-col cols="6" md="2">
       <div>
         <div>Status</div>
         <v-autocomplete
@@ -191,7 +191,7 @@ const resetFilter = () => {
 
     <v-spacer></v-spacer>
 
-    <v-col cols="auto">
+    <v-col cols="12" md="auto">
       <v-text-field
         v-model="filter.keyword"
         variant="outlined"
