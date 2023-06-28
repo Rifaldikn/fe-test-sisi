@@ -131,7 +131,7 @@ const filterItem = _.debounce(() => {
   const endDate =
     moment(props.filter?.rangeOfDate?.[1]).format("DD-MM-YYYY") || "";
 
-  console.log(startDate, endDate, props.filter?.rangeOfDate);
+  console.log(startDate, endDate);
 
   filteredItems.value = [...items.value]
     .filter(
@@ -164,6 +164,8 @@ watch(
 watch(
   props.filter,
   () => {
+    paging.value.offset = 0;
+    paging.value.page = 1;
     filterItem();
   },
   {
